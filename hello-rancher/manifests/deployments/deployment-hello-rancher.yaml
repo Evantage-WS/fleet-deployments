@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: hello-rancher
-  replicas: 1
+  replicas: 5
   strategy:
     rollingUpdate:
       maxSurge: 25%
