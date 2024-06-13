@@ -2,7 +2,7 @@ defaultNamespace: hello-rancher
 helm:
   repo: https://evantage-ws.github.io/helm-charts/
   chart: hello-rancher
-  version: 1.0.0
+  version: 1.0.1
   releaseName: hello-rancher
   values:
     replicaCount: 2
