@@ -8,5 +8,7 @@ helm:
     replicaCount: 2
     ingress:
       enabled: true
+      # Most of the time, use hello-rancher.192.168.2.10.sslip.io, see kubeclt get ingress -n hello-rancher op de downstream server
+      # Add a label on the downstream cluster with 'domain = hello-rancher.192.168.2.10.sslip.io'
       host: "hello-rancher.${ .ClusterLabels.domain }"
 
