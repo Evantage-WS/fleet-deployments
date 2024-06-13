@@ -9,7 +9,7 @@ helm:
     app:
       localization:
         title: "Rancher Demo App"
-        pets: "cowmeleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
+        pets: "cows" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
         color: "green" # container background color (any color name from the CSS pallete)    
     ingress:
       enabled: true
