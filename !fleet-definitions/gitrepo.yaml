@@ -1,7 +1,7 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: fleet-deployments
+  name: hello-rancher
   namespace: fleet-default
 spec:
   branch: main
@@ -9,4 +9,4 @@ spec:
     - hello-rancher/helm
   repo: https://github.com/Evantage-WS/fleet-deployments
   targets:
-    - clusterGroup: install-hello-rancher
+    - clusterGroup: deploy-hello-rancher
