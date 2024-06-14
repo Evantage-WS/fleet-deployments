@@ -1,10 +1,16 @@
 # Fleet demo with Hello Rancher
 
-Execute:
+For fleet-local, execute:
 ```
-kubectl apply -f https://raw.githubusercontent.com/Evantage-WS/fleet-deployments/main/_fleet-definitions/gitrepo.yaml
-kubectl apply -f https://raw.githubusercontent.com/Evantage-WS/fleet-deployments/main/_fleet-definitions/clustergroup.yaml
+kubectl apply -f https://raw.githubusercontent.com/Evantage-WS/fleet-deployments/main/_fleet-definitions/fleet-local/gitrepo.yaml
+kubectl apply -f https://raw.githubusercontent.com/Evantage-WS/fleet-deployments/main/_fleet-definitions/fleet-local/clustergroup.yaml
 ```
+For fleet-default, execute:
+```
+kubectl apply -f https://raw.githubusercontent.com/Evantage-WS/fleet-deployments/main/_fleet-definitions/fleet-default/gitrepo.yaml
+kubectl apply -f https://raw.githubusercontent.com/Evantage-WS/fleet-deployments/main/_fleet-definitions/fleet-default/clustergroup.yaml
+```
+
 ### Add the domain label to the cluster object in 'Continuous Delivery' -> Clusters -> 'clustername', this is used by the ingress
 
 ```
