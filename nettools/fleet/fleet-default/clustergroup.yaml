@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  annotations:
+    field.cattle.io/description: 'Install the Evantage nettools container'
+  name: deploy-nettools
+  namespace: fleet-default
+spec:
+  selector:
+    matchLabels:
+      deploy-nettools: 'true'
