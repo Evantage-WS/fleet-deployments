@@ -1,12 +1,11 @@
 apiVersion: fleet.cattle.io/v1alpha1
-kind: GitRepo
+kind: ClusterGroup
 metadata:
-  name: nettools
+  annotations:
+    field.cattle.io/description: 'Install the Evantage nettools container'
+  name: deploy-nettools
   namespace: fleet-local
 spec:
-  branch: main
-  paths:
-    - nettools/helm
-  repo: https://github.com/Evantage-WS/fleet-deployments
-  targets:
-    - clusterGroup: deploy-nettools
+  selector:
+    matchLabels:
+      deploy-nettools: 'true'
