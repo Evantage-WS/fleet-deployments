@@ -3,9 +3,9 @@ kind: ClusterGroup
 metadata:
   annotations:
     field.cattle.io/description: 'Install the Evantage nettools container'
-  name: deploy-nettools
+  name: deploy-evantage-nettools
   namespace: fleet-default
 spec:
   selector:
     matchLabels:
-      deploy-nettools: 'true'
+      deploy-evantage-nettools: 'true'

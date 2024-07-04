@@ -1,12 +1,12 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: evantage-nettools
+  name: nettools
   namespace: fleet-local
 spec:
   branch: main
   paths:
-    - nettools/helm
+    - evantage-nettools/helm
   repo: https://github.com/Evantage-WS/fleet-deployments
   targets:
     - clusterGroup: deploy-evantage-nettools

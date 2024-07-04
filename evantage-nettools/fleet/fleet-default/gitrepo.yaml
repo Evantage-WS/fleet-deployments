@@ -6,7 +6,7 @@ metadata:
 spec:
   branch: main
   paths:
-    - nettools/helm
+    - evantage-nettools/helm
   repo: https://github.com/Evantage-WS/fleet-deployments
   targets:
-    - clusterGroup: deploy-nettools
+    - clusterGroup: deploy-evantage-nettools
