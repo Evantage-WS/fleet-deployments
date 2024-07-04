@@ -1,7 +1,7 @@
-defaultNamespace: hello-rancher
+defaultNamespace: evantage-nettools
 helm:
   repo: https://evantage-ws.github.io/helm-charts/
-  chart: nettools
+  chart: evantage-nettools
   version: 1.0.1
-  releaseName: nettools
+  releaseName: evantage-nettools
 
