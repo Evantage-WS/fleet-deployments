@@ -1,4 +1,4 @@
-defaultNamespace: hello-rancher
+defaultNamespace: evantage
 helm:
   repo: https://evantage-ws.github.io/helm-charts/
   chart: hello-rancher
