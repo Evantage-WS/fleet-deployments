@@ -2,7 +2,7 @@ defaultNamespace: hello-rancher
 helm:
   repo: https://evantage-ws.github.io/helm-charts/
   chart: hello-rancher
-  version: 1.0.1
+  version: 1.0.2
   releaseName: hello-rancher
   values:
     replicaCount: 1
@@ -10,7 +10,7 @@ helm:
       localization:
         title: "Rancher Demo App"
         pets: "cowmeleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
-        color: "blue" # container background color (any color name from the CSS pallete)    
+        color: "blue" # container background color (any color name from the CSS pallete)
     ingress:
       enabled: true
       # Most of the time, use hello-rancher.192.168.2.10.sslip.io, see kubeclt get ingress -n hello-rancher op de downstream server
