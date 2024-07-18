@@ -10,7 +10,7 @@ helm:
       localization:
         title: "Rancher Demo App"
         pets: "cowmeleons" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
-        color: "blue" # container background color (any color name from the CSS pallete)
+        color: "yellow" # container background color (any color name from the CSS pallete)
     ingress:
       enabled: true
       # Most of the time, use hello-rancher.192.168.2.10.sslip.io, see kubeclt get ingress -n hello-rancher op de downstream server
