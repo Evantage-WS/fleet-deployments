@@ -5,7 +5,7 @@ helm:
   version: 1.0.3
   releaseName: hello-rancher
   values:
-    replicaCount: 4
+    replicaCount: 1
     app:
       localization:
         title: "Rancher Demo App"
