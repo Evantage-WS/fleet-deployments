@@ -12,7 +12,7 @@ helm:
         pets: "cows" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
         color: "green" # container background color (any color name from the CSS pallete)
     ingress:
-      className: "${ .ClusterLabels.hello-rancher-ingressclassname }"
+      ingressClassName: "${ .ClusterLabels.hello-rancher-ingressclassname }"
       enabled: true
       # Most of the time, use hello-rancher.192.168.2.10.sslip.io, see kubeclt get ingress -n hello-rancher op de downstream server
       # Add a label on the downstream cluster with 'domain = 192.168.2.10.sslip.io'
