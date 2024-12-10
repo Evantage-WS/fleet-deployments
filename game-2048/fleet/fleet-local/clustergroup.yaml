@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  annotations:
+    field.cattle.io/description: 'Install the game 2048'
+  name: deploy-game-2048
+  namespace: fleet-local
+spec:
+  selector:
+    matchLabels:
+      deploy-game-2048: 'true'
