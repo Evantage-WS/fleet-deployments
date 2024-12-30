@@ -2,6 +2,4 @@ defaultNamespace: evantage
 helm:
   repo: https://evantage-ws.github.io/helm-charts/
   chart: evantage-nettools
-  version: 1.0.1
   releaseName: evantage-nettools
-
