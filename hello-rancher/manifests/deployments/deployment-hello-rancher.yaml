@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name:  hello-rancher
-        image: evantage/hello-rancher:1.0.1
+        image: evantage/hello-rancher:1.0.2 # https://hub.docker.com/r/bashofmann/rancher-demo/tags
         resources:
           requests:
             cpu: 100m
@@ -36,6 +36,15 @@ spec:
           value: yellow
         - name: PETS
           value: chameleons
+          # cows
+          # chameleons
+          # cowmeleons
         ports:
         - containerPort:  8080
       restartPolicy: Always
+
+    app:
+      localization:
+        title: "Rancher Demo App"
+        pets: "cows" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
+        color: "green" # container background color (any color name from the CSS pallete)
