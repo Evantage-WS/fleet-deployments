@@ -42,9 +42,3 @@ spec:
         ports:
         - containerPort:  8080
       restartPolicy: Always
-
-    app:
-      localization:
-        title: "Rancher Demo App"
-        pets: "cows" # available pets include 'cows' and 'chameleons' and possibly 'cowmeleons'
-        color: "green" # container background color (any color name from the CSS pallete)
