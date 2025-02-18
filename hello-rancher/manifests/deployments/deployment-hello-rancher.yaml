@@ -31,7 +31,7 @@ spec:
             memory: 200Mi
         env:
         - name: TITLE
-          value: 'Rancher Demo App'
+          value: "Rancher Demo App"
         - name: CONTAINER_COLOR
           value: yellow
         - name: PETS
