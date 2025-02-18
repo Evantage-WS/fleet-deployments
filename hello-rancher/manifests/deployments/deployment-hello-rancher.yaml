@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: hello-rancher
-  replicas: 1
+  replicas: 3
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -22,7 +22,6 @@ spec:
       containers:
       - name:  hello-rancher
         image: evantage/hello-rancher:1.0.1 # https://hub.docker.com/r/bashofmann/rancher-demo/tags
-        # image: peteindockerhub/hello-rancher:1.0.2
         resources:
           requests:
             cpu: 100m
@@ -31,6 +30,8 @@ spec:
             cpu: 200m
             memory: 200Mi
         env:
+        - name: TITLE
+          value: 'Rancher Demo App'
         - name: CONTAINER_COLOR
           value: yellow
         - name: PETS
