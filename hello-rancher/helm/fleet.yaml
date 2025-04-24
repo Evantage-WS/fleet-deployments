@@ -4,7 +4,7 @@ helm:
   chart: hello-rancher
   releaseName: hello-rancher
   values:
-    replicaCount: 3
+    replicaCount: 5
     app:
       localization:
         title: "Rancher Demo App"
