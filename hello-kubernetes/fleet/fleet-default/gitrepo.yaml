@@ -1,0 +1,12 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: hello-rancher
+  namespace: fleet-default
+spec:
+  branch: main
+  paths:
+    - hello-kubernetes/manifests
+  repo: https://github.com/Evantage-WS/fleet-deployments
+  targets:
+    - clusterGroup: deploy-hello-kubernetes

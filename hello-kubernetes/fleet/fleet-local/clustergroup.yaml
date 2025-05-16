@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  annotations:
+    field.cattle.io/description: 'Install the hello kubernetes demo'
+  name: deploy-hello-kubernetes
+  namespace: fleet-local
+spec:
+  selector:
+    matchLabels:
+      deploy-hello-kubernetes: 'true'
