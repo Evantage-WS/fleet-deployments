@@ -1,12 +1,12 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: control-room
+  name: space-station-control-center
   namespace: fleet-default
 spec:
   branch: main
   paths:
-    - control-room/helm
+    - space-station-control-center/helm
   repo: https://github.com/Evantage-WS/fleet-deployments
   targets:
-    - clusterGroup: deploy-control-room
+    - clusterGroup: deploy-space-station-control-center

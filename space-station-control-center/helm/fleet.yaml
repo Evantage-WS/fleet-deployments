@@ -1,0 +1,9 @@
+defaultNamespace: evantage
+helm:
+  repo: https://evantage-ws.github.io/helm-charts/
+  chart: space-station-control-center
+  releaseName: space-station-control-center
+  values:
+    nginx:
+      ingress:
+        host: "space-station-control-center-${ .ClusterLabels.domain }"

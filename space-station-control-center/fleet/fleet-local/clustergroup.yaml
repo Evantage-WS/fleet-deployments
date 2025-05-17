@@ -3,9 +3,9 @@ kind: ClusterGroup
 metadata:
   annotations:
     field.cattle.io/description: 'Install the control room demo'
-  name: deploy-control-room
-  namespace: fleet-default
+  name: deploy-space-station-control-center
+  namespace: fleet-local
 spec:
   selector:
     matchLabels:
-      deploy-control-room: 'true'
+      deploy-space-station-control-center: 'true'
