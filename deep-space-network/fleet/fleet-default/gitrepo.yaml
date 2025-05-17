@@ -1,0 +1,12 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: deep-space-network
+  namespace: fleet-default
+spec:
+  branch: main
+  paths:
+    - deep-space-network/helm
+  repo: https://github.com/Evantage-WS/fleet-deployments
+  targets:
+    - clusterGroup: deploy-deep-space-network

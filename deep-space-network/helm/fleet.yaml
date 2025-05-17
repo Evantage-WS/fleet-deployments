@@ -1,0 +1,9 @@
+defaultNamespace: evantage
+helm:
+  repo: https://evantage-ws.github.io/helm-charts/
+  chart: deep-space-network
+  releaseName: deep-space-network
+  values:
+    nginx:
+      ingress:
+        host: "deep-space-network-${ .ClusterLabels.domain }"

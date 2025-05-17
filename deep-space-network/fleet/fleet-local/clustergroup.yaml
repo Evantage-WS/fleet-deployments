@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  annotations:
+    field.cattle.io/description: 'Install the deep space network demo'
+  name: deploy-deep-space-network
+  namespace: fleet-local
+spec:
+  selector:
+    matchLabels:
+      deploy-deep-space-network: 'true'
