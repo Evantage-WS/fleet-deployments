@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  annotations:
+    field.cattle.io/description: 'Install the control room demo'
+  name: deploy-control-room
+  namespace: fleet-local
+spec:
+  selector:
+    matchLabels:
+      deploy-control-room: 'true'

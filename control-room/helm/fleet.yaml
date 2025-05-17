@@ -1,0 +1,9 @@
+defaultNamespace: evantage
+helm:
+  repo: https://evantage-ws.github.io/helm-charts/
+  chart: control-room
+  releaseName: control-room
+  values:
+    nginx:
+      ingress:
+        host: "control-room-${ .ClusterLabels.domain }"
