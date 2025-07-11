@@ -7,5 +7,5 @@ helm:
     ingress:
       host: "hello-kubernetes-${ .ClusterLabels.domain }"
     env:
-      message: Deployed via Fleet!!!!!!
+      message: 'Deployed via Fleet, it is working !!!!!! :-)'
 
