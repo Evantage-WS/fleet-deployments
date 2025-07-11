@@ -1,0 +1,11 @@
+defaultNamespace: evantage
+helm:
+  repo: https://evantage-ws.github.io/helm-charts/
+  chart: hello-kubernetes
+  releaseName: hello-kubernetes
+  values:
+    ingress:
+      host: "hello-rancher-${ .ClusterLabels.domain }"
+    env:
+      message: Deployed via Fleet!!!!!!
+
