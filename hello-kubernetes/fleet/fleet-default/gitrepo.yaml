@@ -6,7 +6,7 @@ metadata:
 spec:
   branch: main
   paths:
-    - hello-kubernetes/manifests
+    - hello-kubernetes/helm
   repo: https://github.com/Evantage-WS/fleet-deployments
   targets:
     - clusterGroup: deploy-hello-kubernetes
