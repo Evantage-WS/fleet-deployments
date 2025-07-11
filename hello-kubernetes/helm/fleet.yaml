@@ -5,7 +5,7 @@ helm:
   releaseName: hello-kubernetes
   values:
     ingress:
-      host: "hello-rancher-${ .ClusterLabels.domain }"
+      host: "hello-kubernetes-${ .ClusterLabels.domain }"
     env:
       message: Deployed via Fleet!!!!!!
 
