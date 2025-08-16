@@ -32,3 +32,5 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: spec.nodeName
+          - name: CONTAINER_IMAGE
+            value: evantage/hello-kubernetes
