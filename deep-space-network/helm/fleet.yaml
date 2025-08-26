@@ -6,4 +6,5 @@ helm:
   values:
     nginx:
       ingress:
+        ingressClassName: nginx
         host: "deep-space-network-${ .ClusterLabels.domain }"

@@ -6,4 +6,5 @@ helm:
   values:
     nginx:
       ingress:
+        ingressClassName: nginx
         host: "space-station-control-center-${ .ClusterLabels.domain }"
