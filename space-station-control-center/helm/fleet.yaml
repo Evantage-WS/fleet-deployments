@@ -6,5 +6,5 @@ helm:
   values:
     nginx:
       ingress:
-        ingressClassName: nginx
+        ingressClassName: cloudflare-tunnel
         host: "space-station-control-center-${ .ClusterLabels.domain }"
