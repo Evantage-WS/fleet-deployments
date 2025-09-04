@@ -5,7 +5,7 @@ helm:
   releaseName: hello-kubernetes
   values:
     ingress:
-      ingressClassName: nginx
+      ingressClassName: cloudflare-tunnel
       host: "hello-kubernetes-${ .ClusterLabels.domain }"
     env:
       message: "Deployed via Fleet, it's working with a Safe Base Container Image, SUSE BCI"
