@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: ClusterGroup
+metadata:
+  annotations:
+    field.cattle.io/description: 'Install the alien geeko demo'
+  name: deploy-alien-geeko
+  namespace: fleet-default
+spec:
+  selector:
+    matchLabels:
+      deploy-alien-geeko: 'true'

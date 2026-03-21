@@ -1,0 +1,10 @@
+defaultNamespace: evantage
+helm:
+  repo: https://evantage-ws.github.io/helm-charts/
+  chart: alien-geeko
+  releaseName: alien-geeko
+  values:
+    ingress:
+      ingressClassName: cloudflare-tunnel
+      host: "alien-geeko-${ .ClusterLabels.domain }"
+
