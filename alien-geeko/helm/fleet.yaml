@@ -4,6 +4,7 @@ helm:
   chart: alien-geeko
   releaseName: alien-geeko
   values:
+    namespace: evantage
     ingress:
       ingressClassName: cloudflare-tunnel
       host: "alien-geeko-${ .ClusterLabels.domain }"
