@@ -7,4 +7,4 @@ helm:
     nginx:
       ingress:
         ingressClassName: cloudflare-tunnel
-        host: "space-station-control-center-${ .ClusterLabels.domain }"
+        host: "space-station-control-center.${ .ClusterLabels.domain }"
