@@ -7,5 +7,5 @@ helm:
     namespace: evantage
     ingress:
       ingressClassName: cloudflare-tunnel
-      host: "alien-geeko.${ .ClusterLabels.domain }"
+      host: "alien-geeko-${ .ClusterLabels.domain }"
 
