@@ -6,6 +6,6 @@ helm:
   values:
     namespace: evantage
     ingress:
-      ingressClassName: cloudflare-tunnel
+      ingressClassName: traefik
       host: "alien-geeko-${ .ClusterLabels.domain }"
 

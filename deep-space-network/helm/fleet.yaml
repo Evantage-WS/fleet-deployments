@@ -6,5 +6,5 @@ helm:
   values:
     nginx:
       ingress:
-        ingressClassName: cloudflare-tunnel
+        ingressClassName: traefik
         host: "deep-space-network-${ .ClusterLabels.domain }"
