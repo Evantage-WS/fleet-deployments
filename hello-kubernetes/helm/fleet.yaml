@@ -7,7 +7,7 @@ helm:
     ingress:
       ingressClassName: traefik
       host: "hello-kubernetes.${ .ClusterLabels.domain }"
+      tls:
+        - secretName: cloud-native-net-wildcard-certificate-tls
     env:
       message: "Deployed via Fleet, it's working with a Safe Base Container Image, SUSE BCI"
-    tls:
-      - secretName: cloud-native-net-wildcard-certificate-tls
