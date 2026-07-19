@@ -7,6 +7,6 @@ helm:
     nginx:
       ingress:
         ingressClassName: traefik
-        host: "space-station-control-center-${ .ClusterLabels.domain }"
+        host: "space-station-control-center.${ .ClusterLabels.domain }"
         tls:
           - secretName: cloud-native-net-wildcard-certificate-tls

@@ -7,6 +7,6 @@ helm:
     nginx:
       ingress:
         ingressClassName: traefik
-        host: "deep-space-network-${ .ClusterLabels.domain }"
+        host: "deep-space-network.${ .ClusterLabels.domain }"
         tls:
           - secretName: cloud-native-net-wildcard-certificate-tls
